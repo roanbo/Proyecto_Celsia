@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Actualización a la última versión estable
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -34,11 +34,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Actualización a la última versión estable
 
     - name: Build Docker image
       run: docker build -t huggingface-model-app .
 
     - name: Run container
       run: docker run huggingface-model-app
+
 
