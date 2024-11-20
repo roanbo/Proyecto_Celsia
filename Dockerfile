@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 # Crear directorio de trabajo
 WORKDIR /app
 
-# Copiar archivos necesarios
+# Copiar archivos necesarios.
 COPY ./src /app/src
 COPY ./test /app/test
 COPY requirements.txt .
