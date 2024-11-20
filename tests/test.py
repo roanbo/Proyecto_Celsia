@@ -1,5 +1,5 @@
 import unittest
-from main import HuggingFaceModel
+from main import HuggingFaceModel #main
 
 class TestHuggingFaceModel(unittest.TestCase):
     def setUp(self):
